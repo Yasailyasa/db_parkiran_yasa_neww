@@ -1,0 +1,22 @@
+CREATE DATABASE db_parkiran_yasa 
+
+PARKIRAN :
+CREATE TABLE parkiran (id_parkiran INT (5) PRIMARY KEY , harga INT(10), alamat VARCHAR (20));
+
+KENDARAAN :
+CREATE TABLE kendaraan (jenis_plat_nomor VARCHAR (20) PRIMARY KEY, jenis_kendaraan VARCHAR (5), id_parkiran INT (5));
+
+PARKIRAN :
+INSERT INTO parkiran VALUE
+('263 1000 ','NO 63'),
+('389 3500 ','NO 32'),
+('533 4000 ','NO 52'),
+('613 2500 ','NO 11'),
+('673' 4300 ','NO 76');
+
+KENDARAAN :
+('D','motor','263'),
+('S ','mobil','389'),
+('Z ','mobil','533'),
+('W','motor','613'),
+('B','mobil','673');
